@@ -6,6 +6,10 @@
       "env": {
         "META_ACCESS_TOKEN": "TU_TOKEN_DE_META_AQUI"
       }
+    },
+    "markitdown": {
+      "command": "uvx",
+      "args": ["markitdown-mcp"]
     }
   }
 }

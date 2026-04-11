@@ -4,6 +4,8 @@ Este proyecto conecta Claude Code con la Meta Marketing API mediante un servidor
 
 ## Configuración
 
+### Meta Ads MCP
+
 El servidor MCP `meta-ads-mcp` está configurado en `.mcp.json`. Proporciona acceso a la API de Meta Marketing para:
 
 - Consultar cuentas publicitarias
@@ -80,3 +82,23 @@ El servidor MCP `meta-ads-mcp` está configurado en `.mcp.json`. Proporciona acc
 ### Insights y Análisis
 - `mcp_meta_ads_get_insights` - Métricas de rendimiento
 - `mcp_meta_ads_create_budget_schedule` - Programar presupuestos
+
+## MarkItDown MCP (Microsoft)
+
+### Configuración
+
+El servidor MCP `markitdown-mcp` está configurado en `.mcp.json`. Utiliza `uvx` para ejecutar el paquete de Microsoft sin necesidad de instalación previa.
+
+### Descripción
+
+MarkItDown es una herramienta de Microsoft que convierte más de 29 formatos de archivo a Markdown, ideal para procesamiento con LLMs y análisis de texto.
+
+### Formatos soportados
+- PDF, Word (.docx), PowerPoint (.pptx), Excel (.xlsx)
+- HTML, CSV, JSON, XML
+- Imágenes (con OCR), Audio (con transcripción)
+- ZIP, EPub, Jupyter Notebooks
+- RSS feeds, URLs de YouTube, páginas de Wikipedia
+
+### Herramienta MCP Disponible
+- `convert_to_markdown(uri)` - Convierte cualquier archivo o URL a Markdown. Acepta URIs con esquemas `http:`, `https:`, `file:` o `data:`
