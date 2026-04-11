@@ -1,0 +1,13 @@
+# MCP config contains access tokens - do not commit
+.mcp.json
+
+# Environment files
+.env
+.env.*
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
