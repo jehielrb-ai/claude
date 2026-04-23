@@ -107,12 +107,16 @@ body {
 /* Títulos */
 .title-xl {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 130px;
+  font-size: 110px;
   line-height: 0.95;
   text-align: center;
   color: #ffffff;
   text-shadow: 0 4px 20px rgba(0,0,0,0.6);
   letter-spacing: 2px;
+}
+
+.slide {
+  overflow: hidden;
 }
 
 .title-lg {
