@@ -1,0 +1,332 @@
+/* Estilo Movimiento Zenit - Carrusel Instagram */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background: #1a1a1a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 70px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Overlay oscuro sobre la imagen de fondo */
+.slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.9) 100%);
+  z-index: 1;
+}
+
+/* Imagen de fondo decorativa */
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LOGO header */
+.logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo-circle {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(135deg, #1e90ff 0%, #0066cc 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 25px rgba(30, 144, 255, 0.4);
+  border: 4px solid #ffffff;
+}
+
+.logo-circle svg {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.logo-subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  letter-spacing: 6px;
+  color: #1e90ff;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Títulos */
+.title-xl {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 110px;
+  line-height: 0.95;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  letter-spacing: 2px;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.title-lg {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 90px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.title-md {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* Caja destacada estilo Zenit (negra con borde azul) */
+.zenit-box {
+  background: rgba(0, 0, 0, 0.85);
+  border: 4px solid #1e90ff;
+  padding: 50px 60px;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(30, 144, 255, 0.3);
+}
+
+.zenit-box .box-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.zenit-box .box-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 130px;
+  color: #1e90ff;
+  line-height: 1;
+}
+
+.zenit-box .box-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Botón CTA azul */
+.cta-button {
+  background: linear-gradient(135deg, #1e90ff 0%, #0066cc 100%);
+  border: 4px solid #ffffff;
+  padding: 40px 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  box-shadow: 0 10px 30px rgba(30, 144, 255, 0.5);
+}
+
+/* Lista de precios estilo */
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.price-label {
+  background: #000000;
+  border: 3px solid #1e90ff;
+  padding: 25px 35px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.price-value {
+  background: rgba(30, 144, 255, 0.15);
+  border: 3px solid #1e90ff;
+  padding: 25px 35px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+  flex: 2;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.price-value .highlight {
+  color: #1e90ff;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+/* Lista de beneficios */
+.benefits-list {
+  list-style: none;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.benefits-list li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  color: #ffffff;
+  padding: 22px 30px;
+  margin: 15px 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 6px solid #1e90ff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.benefits-list li::before {
+  content: '✓';
+  color: #1e90ff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Footer */
+.slide-footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.swipe-indicator {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  color: #1e90ff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.slide-number {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  z-index: 3;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: #1e90ff;
+  letter-spacing: 4px;
+}
+
+.whatsapp-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.whatsapp-icon {
+  background: #25D366;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #1e90ff;
+  margin: 20px auto;
+}
+
+.tag {
+  display: inline-block;
+  background: #1e90ff;
+  color: white;
+  padding: 8px 25px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
